@@ -18,6 +18,11 @@ def input_visitors() -> Dict[str, List[str]]:
             print('Namn kan inte vara tomt.')
             continue
 
+        # Kontrollera om new_visitor redan finns i listan
+        if new_visitor in result:
+            print('Deltagaren finns redan, ange nytt namn.')
+            continue
+
         not_visitor = input('Ange namn separerade med kommatecken: ')
 
         # Dela upp, trimma, och filtrera bort tomma poster
@@ -33,6 +38,7 @@ def input_visitors() -> Dict[str, List[str]]:
 
 def place_visitors(visitors: Dict[str, List[str]]) -> Dict[str, List[str]]:
     table: Dict[str, List[str]] = {}
+    # Placera ut en i taget till ledigt bord
     for new_visitor in visitors.keys():
         print(new_visitor)
     return table
