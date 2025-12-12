@@ -1,0 +1,5 @@
+Seeing signs of the winter coming, maester Pycelle is organizing a small conference for the dominant figures of Westeros where he plans to educate them on the dangers of the coming event. However, the recent hostilities that have broken out on the continent make putting certain people near each other extremely difficult. Pycelle came up with the idea to organize the visitors near tables in groups of four, with the tables separated from each other with completely opaque draperies. Unfortunately, he does not have the funding to organize a grander event.  
+
+Help Pycelle organize the event by writing an algorithm that seats visitors next to each other. Each table may have a maximum of four people, and for budgeting reasons, tables should be filled at or near their maximum capacity. Make sure people with a grudge towards each other do not sit at the same table! So far, 12 people have confirmed their participation, but more were invited. Therefore, the algorithm should be adaptable to accommodate more people.  
+
+The names of the participants and their grudges are the inputs of the algorithm, in a form of a dictionary, where an empty list indicates no grudges.
