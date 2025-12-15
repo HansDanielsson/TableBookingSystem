@@ -27,7 +27,7 @@ def input_visitors() -> Dict[str, Set[str]]:
         conflicts = input('Ange namn separerade med kommatecken: ')
 
         # Dela upp, trimma, och filtrera bort tomma poster
-        conflict_set = [c.strip() for c in conflicts.split(',') if c.strip()]
+        conflict_set = {c.strip() for c in conflicts.split(',') if c.strip()}
 
         visitors[name] = conflict_set
 
